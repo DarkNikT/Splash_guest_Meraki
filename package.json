@@ -1,0 +1,29 @@
+{
+  "name": "splash_guest_meraki",
+  "version": "1.0.0",
+  "description": "Página bienvenida de usuarios invitados",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkNikT/Splash_guest_Meraki.git"
+  },
+  "keywords": [
+    "Meraki",
+    "Cisco",
+    "Portal",
+    "Cautivo"
+  ],
+  "author": "Fabian Guevara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarkNikT/Splash_guest_Meraki/issues"
+  },
+  "homepage": "https://github.com/DarkNikT/Splash_guest_Meraki#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}

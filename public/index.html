@@ -1,0 +1,48 @@
+<!--
+Realización página bienvenida modo guest de un AP MR66  
+
+This is example was written by:
+Cory Guynn
+www.InternetOfLEGO.com
+2016
+
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <div class="container">  
+      
+      <form id="loginForm" action="#">
+        <center><a href=""><img src="./img/2337959-logo.svg" width="50%"/></a></center>
+        <br>
+        <fieldset>
+          <input id="name" placeholder="Ingrese su nombre" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input id="email" placeholder="Ingrese su correo" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input id="company" placeholder="Ingrese su rol" type="text" tabindex="3">
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" name="checkbox" id="consentimiento" required>
+          <label for="consentimiento">Acepta que sean tratados sus datos con el fin de monitorear el estado de la red.</label>
+        </fieldset>
+        <fieldset>
+          <button type="submit" >Ingresar a red WiFi</button>
+        </fieldset>
+        <p class="copyright">Sena 2022 <a href="http://www.InternetOfLEGO.com" target="_blank" title="Internet of LEGO">Fabian</a></p>
+      </form>
+    </div>
+    <hr>
+    <h4>Debugging Stats</h4>
+    <p><label>Base Grant URL: </label><label id="baseGrantURL"></label></p>
+    <p><label>User Continue URL: </label><label id="userContinueURL"></label></p>
+    <p><label>Client IP: </label><label id="clientIP"></label></p>
+    <p><label>Client MAC: </label><label id="clientMAC"></label></p>
+    <p><label>Access Point MAC: </label><label id="nodeMAC"></label></p>
+        
+    <script src="./js/meraki.js"></script>
+</html>
