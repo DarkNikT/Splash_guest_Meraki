@@ -12,22 +12,60 @@
     text-rendering: optimizeLegibility;
 }
 
-body {
+body {|
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-size: 12px;
     line-height: 30px;
     color: #777;
-    background-image: url("../img/foto-ambiente.jpeg");
+    background-image: linear-gradient(to left, rgb(0 0 0 / 37%) 100%, transparent), url(../img/foto-ambiente.jpeg);
     background-repeat: no-repeat;
-    background-size: contain;
-}
+    background-size: cover;
+    padding: 6rem 5rem;
 
+}
+.main {
+    background: #F9F9F9;
+    display: flex;
+    width: 800px;
+   margin: 0 auto;
+    
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.mensaje {
+    position: relative;
+    align-items: center;
+    width: 50%;
+    max-width: 500px;
+    background-image: url("../img/foto_aprendices.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mensaje h1 {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    color: rgb(234, 234, 234);
+    background-image: linear-gradient(to top, rgb(5, 0, 0), transparent);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow: black;
+}
+.mensaje h2{
+    position: absolute;
+    bottom: 100%;
+    color: #e9f1f7;
+}
+.mensaje img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 .container {
     max-width: 400px;
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
+    width: 50%;
+
+    background: #F9F9F9;
 }
 
 #loginForm input[type="text"],
@@ -40,10 +78,12 @@ body {
 }
 
 #loginForm {
-    background: #F9F9F9;
     padding: 25px;
-    margin: 150px 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: auto 0;
+}
+
+#loginform img{
+    padding: 10px;
 }
 
 #loginForm h3 {
@@ -59,6 +99,20 @@ body {
     font-size: 13px;
     font-weight: 400;
 }
+#campo_consentimiento {
+    display: flex;
+    margin-bottom: 2rem;
+}
+#campo_consentimiento input{
+    margin-right: 4px;
+}
+
+#campo_consentimiento label{
+    color:rgba(0, 0, 0, 0.8);
+    line-height: 90%;
+    text-align: justify;
+}
+
 
 fieldset {
     border: medium none !important;
