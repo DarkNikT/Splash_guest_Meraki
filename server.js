@@ -11,6 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 // serve static public site files
 app.use(express.static('public'));
 
+// app.get("/", function(req, res) {
+//   res.sendfile('public/loginInvitado.html')
+// });
+
 /* Página de ingreso invitados*/
 app.get("/logininvitado", function(req, res) {
    res.sendfile('public/loginInvitado.html')
