@@ -12,8 +12,18 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.use(express.static('public'));
 
 /* Página de ingreso invitados*/
-app.get("/", function(req, res) {
-   res.sendfile('public/index.html')
+app.get("/logininvitado", function(req, res) {
+   res.sendfile('public/loginInvitado.html')
+});
+
+/* Página de ingreso profesores*/
+app.get("/loginestudiante", function(req, res) {
+   res.sendfile('public/loginEstudiante.html')
+});
+
+/* Página de ingreso profesores*/
+app.get("/loginprofesor", function(req, res) {
+  res.sendfile('public/loginProfesor.html')
 });
 
 

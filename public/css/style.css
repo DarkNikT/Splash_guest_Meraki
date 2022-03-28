@@ -12,7 +12,7 @@
     text-rendering: optimizeLegibility;
 }
 
-body {|
+body {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-size: 12px;
@@ -21,6 +21,7 @@ body {|
     background-image: linear-gradient(to left, rgb(0 0 0 / 37%) 100%, transparent), url(../img/foto-ambiente.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 0, 0 10%;
     padding: 6rem 5rem;
 
 }
@@ -40,6 +41,7 @@ body {|
     background-image: url("../img/foto_aprendices.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 37% 10%;
 }
 .mensaje h1 {
     position: absolute;
