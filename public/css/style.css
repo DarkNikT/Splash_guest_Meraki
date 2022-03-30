@@ -18,7 +18,8 @@ body {
     font-size: 12px;
     line-height: 30px;
     color: #777;
-    background-image: linear-gradient(to left, rgb(0 0 0 / 37%) 100%, transparent), url(../img/foto-ambiente.jpeg);
+    /* background-image: linear-gradient(to left, rgb(0 0 0 / 37%) 100%, transparent), url(../img/foto-ambiente.jpeg); */
+    background-image: url(../img/foto-ambiente.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0, 0 10%;
@@ -72,6 +73,7 @@ body {
 
 #loginForm input[type="text"],
 #loginForm input[type="email"],
+#loginForm input[type="password"],
 #loginForm input[type="tel"],
 #loginForm input[type="url"],
 #loginForm textarea,
@@ -127,6 +129,7 @@ fieldset {
 #loginForm input[type="text"],
 #loginForm input[type="email"],
 #loginForm input[type="tel"],
+#loginForm input[type="password"],
 #loginForm input[type="url"],
 #loginForm textarea {
     width: 100%;
@@ -138,6 +141,7 @@ fieldset {
 
 #loginForm input[type="text"]:hover,
 #loginForm input[type="email"]:hover,
+#loginForm input[type="password"]:hover,
 #loginForm input[type="tel"]:hover,
 #loginForm input[type="url"]:hover,
 #loginForm textarea:hover {
@@ -199,4 +203,31 @@ fieldset {
 
 :-ms-input-placeholder {
     color: #888;
+}
+
+
+/* Pagina success */
+.main-success{
+    color:rgb(234, 234, 234);
+    text-shadow: 0px 7px 12px black;
+}
+
+#mensajeSuccess{
+    color: wheat;
+}
+
+#labelSSID{
+    font-size: 3rem;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+.main-success a{
+    background: #323232;
+    border-radius: 5%;
+    padding: 0.5rem 3rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #e5e5e5;
+    margin: 2rem;
+    box-shadow: 0px 0px 15px black;
 }

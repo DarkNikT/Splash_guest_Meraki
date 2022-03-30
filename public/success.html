@@ -1,0 +1,57 @@
+<!--
+Realización página bienvenida modo guest de un AP MR66  
+
+This is example was written by:
+Cory Guynn
+www.InternetOfLEGO.com
+2016
+
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+
+<head>
+  <title>Bienvenido</title>
+  <link rel="icon" type="image/x-icon"  href="./favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" media="(max-width: 800px)" href="./css/style_movil.css" />
+</head>
+
+<body>
+  
+  <div class="main-success">
+    <h1 id="mensajeSuccess">Disfrute navegando en la red WiFi</h1>
+    <h1 id="labelSSID"></h1>
+    <br>
+    <a class="" href="https://www.google.com">Navega</a>
+    
+    
+  </div>
+
+</body>
+<script>
+    // tomar el valor de la SSID
+    var nameSSID = decodeURIComponent(GetURLParameter("ssid"));
+    var labelSSID = document.getElementById("labelSSID");
+
+    labelSSID.innerHTML = nameSSID;
+
+    // Helper function to parse URL
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+
+</script>
+
+</html>

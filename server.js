@@ -20,7 +20,7 @@ app.get("/logininvitado", function(req, res) {
    res.sendfile('public/loginInvitado.html')
 });
 
-/* Página de ingreso profesores*/
+/* Página de ingreso estudiantes*/
 app.get("/loginestudiante", function(req, res) {
    res.sendfile('public/loginEstudiante.html')
 });
@@ -30,6 +30,10 @@ app.get("/loginprofesor", function(req, res) {
   res.sendfile('public/loginProfesor.html')
 });
 
+/* Página después de loguearse*/
+app.get("/success", function(req, res) {
+  res.sendfile('public/success.html')
+});
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
