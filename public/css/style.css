@@ -37,7 +37,7 @@ body {
 .mensaje {
     position: relative;
     align-items: center;
-    width: 50%;
+    width: 62%;
     max-width: 500px;
     background-image: url("../img/foto_aprendices.jpg");
     background-size: cover;
@@ -53,6 +53,7 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     text-shadow: black;
+    width: 100%;
 }
 .mensaje h2{
     position: absolute;
@@ -72,6 +73,7 @@ body {
 }
 
 #loginForm input[type="text"],
+#loginForm input[type="number"],
 #loginForm input[type="email"],
 #loginForm input[type="password"],
 #loginForm input[type="tel"],
@@ -127,6 +129,7 @@ fieldset {
 }
 
 #loginForm input[type="text"],
+#loginForm input[type="number"],
 #loginForm input[type="email"],
 #loginForm input[type="tel"],
 #loginForm input[type="password"],
@@ -139,7 +142,8 @@ fieldset {
     padding: 10px;
 }
 
-#loginForm input[type="text"]:hover,
+#loginForm input[type="text"]:
+#loginForm input[type="number"],hover,
 #loginForm input[type="email"]:hover,
 #loginForm input[type="password"]:hover,
 #loginForm input[type="tel"]:hover,
@@ -213,7 +217,7 @@ fieldset {
 }
 
 #mensajeSuccess{
-    color: wheat;
+    color: #c1c1c1;
 }
 
 #labelSSID{

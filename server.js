@@ -15,6 +15,8 @@ app.use(express.static('public'));
 //   res.sendfile('public/loginInvitado.html')
 // });
 
+// Rutas páginas servidor Web
+
 /* Página de ingreso invitados*/
 app.get("/logininvitado", function(req, res) {
    res.sendfile('public/loginInvitado.html')
@@ -34,8 +36,9 @@ app.get("/loginprofesor", function(req, res) {
 app.get("/success", function(req, res) {
   res.sendfile('public/success.html')
 });
-
+// puerto en la que se encuentra el servidor
 var port = process.env.PORT || 5000;
+// activar el servidor para escuchar las solicitudes 
 app.listen(port, function() {
   console.log("Listening on " + port);
 });

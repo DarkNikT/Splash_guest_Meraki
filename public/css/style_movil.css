@@ -18,9 +18,12 @@ br {
 .mensaje{
     height: 300px;
     width: 100%;
+    /*mover foto un poco hacia abajo*/
+    background-position: 37% 0%;
 }
-.mensaje h2 {
-    color: black;
+
+.mensaje h1 {
+    font-size: 1rem;
 }
 .container {
     width: 100%;
